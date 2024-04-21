@@ -13,13 +13,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass start-react",
     "start-react": "react-scripts start",
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "prefix:css": "postcss css/style.comp.css --use autoprefixer -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "compile:sass": "node-sass src/sass/main.scss src/css/style.comp.css",
+    "prefix:css": "postcss src/css/style.comp.css --use autoprefixer -o src/css/style.prefix.css",
+    "compress:css": "node-sass src/css/style.prefix.css src/css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
     "build": "npm-run-all build:css build-react",
     "build-react": "react-scripts build",
