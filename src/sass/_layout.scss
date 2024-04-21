@@ -1,0 +1,32 @@
+.app {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 75vh;
+  width: 85vw;
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.button {
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  border: 0;
+  background-color: var(--marine-blue);
+  color: var(--white);
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  cursor: pointer;
+  width: fit-content;
+  align-self: flex-end;
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+
+.btn-back {
+  background: none;
+  border: none;
+  color: var(--cool-gray);
+  font-weight: 700;
+}

@@ -1,0 +1,69 @@
+.form-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 70%;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    align-items: stretch;
+    height: 100%;
+
+    h2 {
+      margin-top: 4rem;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      color: var(--cool-gray);
+      margin-bottom: 4rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      border: 1px solid var(--light-gray);
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+
+      &::placeholder {
+        color: var(--cool-gray);
+      }
+
+      &:focus::placeholder {
+        border: 1px solid var(--blueish-purple);
+      }
+    }
+
+    label {
+      color: var(--marine-blue);
+    }
+
+    .personal-info-label {
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .error-input {
+      color: red;
+    }
+
+    .error-input-border {
+      border: 1px solid red !important;
+    }
+
+    .button-container {
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

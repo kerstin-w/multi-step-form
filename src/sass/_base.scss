@@ -31,9 +31,21 @@ html {
   }
 }
 
+#root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
   font-family: $font-ubuntu;
   font-size: $font-size;
-  min-height: 100vh;
   background-color: var(--magnolia);
+}
+
+h2 {
+  font-size: 36px;
+  letter-spacing: 1.1px;
+  color: var(--marine-blue);
 }
